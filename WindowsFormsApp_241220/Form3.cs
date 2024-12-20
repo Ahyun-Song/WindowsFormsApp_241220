@@ -43,6 +43,7 @@ namespace WindowsFormsApp_241220
 
             string result = GetGameResult(UserChoice, ComputerChoice);
 
+            textBox_result.Clear();
             textBox_result.AppendText($"User : {UserChoice} | Computer : {ComputerChoice}\r\n");
             textBox_result.AppendText($"Result : {result}\r\n\r\n");
 
@@ -67,7 +68,7 @@ namespace WindowsFormsApp_241220
                 textBox_result.AppendText("Computer Wins the Game");
                 ResetGame();
             }
-
+            // textBox_result.Clear();
 
         }
 
@@ -93,6 +94,7 @@ namespace WindowsFormsApp_241220
         {
             UserScore = 0;
             ComputerScore = 0;
+           // textBox_result.Clear();
         }
 
     }
