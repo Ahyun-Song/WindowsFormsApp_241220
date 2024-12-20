@@ -28,6 +28,7 @@ namespace WindowsFormsApp_241220
 
                     textBox_result.Text = string.Join(Environment.NewLine, results);
                 }
+                e.SuppressKeyPress = true;
             }
             
            // e.SuppressKeyPress = true;
