@@ -38,12 +38,21 @@ namespace WindowsFormsApp_241220
             Random random = new Random();
             string[] StudentScores = new string[count];
 
-            for (int i = 0; i < count; i++)
+            int i = 0;
+            while (i < count)
+            {
+                int score = random.Next(0, 101);
+                StudentScores[i] = $"학생{i + 1}의 점수 : {score}점";
+                i++;
+            }
+            return StudentScores;
+
+           /* for (int i = 0; i < count; i++)
             {
                 int score = random.Next(0, 101);
                 StudentScores[i] = $"학생{i + 1}의 점수 : {score}점";
             }
-            return StudentScores;
+            return StudentScores;*/
         }
        
     }
